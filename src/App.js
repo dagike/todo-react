@@ -1,11 +1,9 @@
 import React from "react";
 
-const App = () => {
-  return (
-    <div>
-      <p>App</p>
-    </div>
-  );
-};
-
-export default App;
+export const App = () => (
+  <div className="App">
+    <header className="App-header">
+      <p>Hello There</p>
+    </header>
+  </div>
+);
