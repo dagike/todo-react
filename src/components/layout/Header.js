@@ -9,8 +9,10 @@ export default () => (
       </div>
       <div className="settings">
         <ul>
-          <li>+</li>
-          <li>
+          <li className="settings__add" data-testid="quick-add-task-action">
+            +
+          </li>
+          <li className="setting__dark-mode" data-testid="dark-mode-action">
             <FaDiceD20 />
           </li>
         </ul>
