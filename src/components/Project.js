@@ -23,7 +23,7 @@ export default ({ project }) => {
   const { name, docId } = project;
   return (
     <>
-      <span className="sidebar__dot"></span>
+      <span className="sidebar__dot">•</span>
       <span className="sidebar__project-name">{name}</span>
       <span
         className="sidebar__project-delete"
