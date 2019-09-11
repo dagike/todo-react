@@ -6,7 +6,7 @@ import {
   FaRegCalendar
 } from "react-icons/fa";
 import { useSelectedProjectValue } from "../../context";
-import Projects from "../ProjectList";
+import ProjectList from "../ProjectList";
 
 export default () => {
   const { setSelectedProject } = useSelectedProjectValue;
@@ -42,7 +42,7 @@ export default () => {
         <h2>Projects</h2>
       </div>
 
-      <ul className="sidebar__projects">{showProjects && <Projects />}</ul>
+      <ul className="sidebar__projects">{showProjects && <ProjectList />}</ul>
     </div>
   );
 };
