@@ -15,7 +15,7 @@ export default ({ activeValue = true }) => {
         data-doc-id={p.docId}
         data-testid="project-aciton"
         className={`sidebar__project ${active === p.projectId ? "active" : ""}`}
-        onCLick={() => {
+        onClick={() => {
           setActive(p.projectId);
           setSelectedProject(p.projectId);
         }}
