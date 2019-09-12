@@ -249,7 +249,8 @@ header {
         color: #cacaca;
       }
     }
-    &.active &:hover {
+    &.active,
+    &:hover {
       font-weight: bold;
       background-color: white;
     }
@@ -339,7 +340,8 @@ header {
           color: #555;
         }
       }
-      &.active &:hover {
+      &.active,
+      &:hover {
         font-weight: bold;
         background-color: white;
       }
