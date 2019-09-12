@@ -4,7 +4,7 @@ import Project from "./Project";
 
 export default ({ activeValue = true }) => {
   const [active, setActive] = useState(activeValue);
-  const { setSelectedProject } = useSelectedProjectValue;
+  const { setSelectedProject } = useSelectedProjectValue();
   const { projects } = useProjectsValue();
 
   return (
@@ -13,7 +13,7 @@ export default ({ activeValue = true }) => {
       <li
         key={p.projectId}
         data-doc-id={p.docId}
-        data-testid="project-aciton"
+        data-testid="project-action"
         className={`sidebar__project ${active === p.projectId ? "active" : ""}`}
         onClick={() => {
           setActive(p.projectId);
