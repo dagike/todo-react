@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaRegListAlt, FaRegCalendarAlt, FaLastfm } from "react-icons/fa";
+import { FaRegListAlt, FaRegCalendarAlt } from "react-icons/fa";
 import moment from "moment";
 
 import { useSelectedProjectValue } from "../context";
