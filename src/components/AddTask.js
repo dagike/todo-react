@@ -4,6 +4,8 @@ import moment from "moment";
 
 import { useSelectedProjectValue } from "../context";
 import firebaseConfig from "../firebase";
+import ProjectOverlay from "./ProjectOverlay";
+import TaskDate from "./TaskDate";
 
 const USERID = "GOTtH8V4c5RP1TLz2ueh";
 
@@ -85,12 +87,22 @@ export default ({
                     setShowProjectOverlay(false);
                     setShowQuickAddTask(false);
                   }}
-                ></span>
+                >
+                  X
+                </span>
               </div>
             </>
           )}
-          <p>Project OVerlay Here</p>
-          <p>TaskDate here</p>
+          <ProjectOverlay
+            setProject={setProject}
+            showProjectOverlay={showProjectOverlay}
+            setShowProjectOverlay={setShowProjectOverlay}
+          />
+          <TaskDate
+            setTaskDate={setTaskDate}
+            showTaskDate={showTaskDate}
+            setShowTaskDate={setShowTaskDate}
+          />
           <input
             type="text"
             className="add-task__content"
