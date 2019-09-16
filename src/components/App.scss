@@ -30,7 +30,7 @@ ul {
 $generic-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
   rbga(0, 0, 0, 0.1) 0px 4px 11px;
 $generic-border: 1px solid #f1f1f1;
-$generic-bg: #db4c3f;
+$generic-bg: #2f9e5e;
 
 @mixin box-overlay() {
   box-shadow: $generic-box-shadow;
@@ -131,7 +131,7 @@ $generic-bg: #db4c3f;
 
 // Header
 header {
-  border-bottom: solid 1px #ca2100;
+  border-bottom: solid 1px #000;
   background-color: $generic-bg;
   -webkit-transition: height 200ms ease-in;
   transition: height 200ms ease-in;
@@ -457,7 +457,7 @@ header {
 
 .add-task__plus,
 .add-project__plus {
-  color: #dd4b39;
+  color: #2f9e5e;
   font-size: 18px;
 }
 
