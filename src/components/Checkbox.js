@@ -1,5 +1,5 @@
 import React from "react";
-import { firebaseConfig } from "firebase";
+import firebaseConfig from "../firebase";
 
 export default ({ id }) => {
   const archiveTask = () => {
