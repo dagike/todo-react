@@ -1,5 +1,5 @@
 import React from "react";
-import { FaDiceD20, FaBars } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { useSidebarValue } from "../../context";
 
 export default () => {
@@ -18,9 +18,6 @@ export default () => {
           <ul>
             <li className="settings__add" data-testid="quick-add-task-action">
               +
-            </li>
-            <li className="setting__dark-mode" data-testid="dark-mode-action">
-              <FaDiceD20 />
             </li>
           </ul>
         </div>

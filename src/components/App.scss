@@ -119,16 +119,6 @@ $generic-bg: #2f9e5e;
   }
 }
 
-// Darkmode
-.darkmode {
-  header {
-    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
-    background-color: #282828;
-    border-color: transparent;
-  }
-}
-
 // Header
 header {
   border-bottom: solid 1px #000;
@@ -212,11 +202,6 @@ header {
             &.settings__add {
               margin-right: 15px;
               font-size: 30px;
-            }
-
-            &.settings__dark-mode svg {
-              width: 20px;
-              height: 20px;
             }
           }
         }
