@@ -1,6 +1,8 @@
 # TODO React App
 
-React Hooks
-Firebase
-SCSS
-Testing
+- Custom Hooks
+- Context API
+- SCSS
+- Testing
+
+[DEMO](https://todo-react.dagike.now.sh)
