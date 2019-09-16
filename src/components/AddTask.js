@@ -12,7 +12,7 @@ const USERID = "GOTtH8V4c5RP1TLz2ueh";
 export default ({
   showAddTaskMain = true,
   shouldShowMain = false,
-  showAddQuickTask,
+  showQuickAddTask,
   setShowQuickAddTask
 }) => {
   const [task, setTask] = useState("");
@@ -59,7 +59,7 @@ export default ({
 
   return (
     <div
-      className={`add-task ${setShowQuickAddTask ? "add-task__overlay" : ""}`}
+      className={`add-task ${showQuickAddTask ? "add-task__overlay" : ""}`}
       data-testid="add-task-comp"
     >
       {showAddTaskMain && (
@@ -73,9 +73,9 @@ export default ({
         </div>
       )}
 
-      {(showMain || setShowQuickAddTask) && (
+      {(showMain || showQuickAddTask) && (
         <div className="add-task__main" data-testid="add-task-main">
-          {setShowQuickAddTask && (
+          {showQuickAddTask && (
             <>
               <div className="quick-add-task">
                 <h2 className="header">Quick Add Task</h2>
@@ -113,11 +113,15 @@ export default ({
           <button
             className="add-task__submit"
             data-testid="add-task"
-            onClick={() => addTask()}
+            onClick={() =>
+              showQuickAddTask
+                ? addTask() && setShowQuickAddTask(false)
+                : addTask()
+            }
           >
             Add Task
           </button>
-          {!showAddQuickTask && (
+          {!showQuickAddTask && (
             <span
               className="add-task__cancel"
               data-testid="add-task-main-cancel"
