@@ -10,11 +10,20 @@ import {
   useSelectedProjectValue
 } from "./selected-projects-context";
 
+import {
+  SidebarContext,
+  SidebarProvider,
+  useSidebarValue
+} from "./sidebar-context";
+
 export {
   ProjectsContext,
   ProjectsProvider,
   useProjectsValue,
   SelectedProjectContext,
   SelectedProjectProvider,
-  useSelectedProjectValue
+  useSelectedProjectValue,
+  SidebarContext,
+  SidebarProvider,
+  useSidebarValue
 };
