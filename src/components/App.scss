@@ -167,9 +167,22 @@ header {
       &.logo {
         padding-left: 8px;
         grid-area: 1/1;
+        @include mq("900px") {
+          display: none;
+        }
 
         img {
           width: 24px;
+        }
+      }
+
+      &.menu {
+        padding-left: 8px;
+        grid-area: 1/1;
+        width: 24px;
+        display: none;
+        @include mq("900px") {
+          display: block;
         }
       }
 

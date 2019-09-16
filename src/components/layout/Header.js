@@ -1,5 +1,5 @@
 import React from "react";
-import { FaDiceD20 } from "react-icons/fa";
+import { FaDiceD20, FaBars } from "react-icons/fa";
 import { useSidebarValue } from "../../context";
 
 export default () => {
@@ -8,8 +8,11 @@ export default () => {
   return (
     <header className="header" data-testid="header">
       <nav>
-        <div className="logo" onClick={() => setSidebar(!sidebar)}>
+        <div className="logo">
           <img src="/images/logo.png" alt="Todo" />
+        </div>
+        <div className="menu" onClick={() => setSidebar(!sidebar)}>
+          <FaBars />
         </div>
         <div className="settings">
           <ul>
